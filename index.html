@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f0f4f8;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      font-size: 24px;
+    }
+    main {
+      padding: 30px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🌐 My Simple Website
+  </header>
+
+  <main>
+    <h1>Welcome!</h1>
+    <p>This is a simple example website made with HTML, CSS, and JavaScript.</p>
+    <button onclick="sayHello()">Click Me!</button>
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Simple Website
+  </footer>
+
+  <script>
+    function sayHello() {
+      document.getElementById("message").innerText = "Hello! Thanks for clicking the button 😊";
+    }
+  </script>
+</body>
+</html>
